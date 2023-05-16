@@ -1,0 +1,35 @@
+h1 {
+    color: blue;
+    font-size: 80px;
+    text-align: center;
+    border: solid 2px black;
+ 
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+    align-content: center;
+    align-items: center;
+  }
+
+  td {
+    border: solid 1px rgb(0, 0, 2);
+    width: 6em;
+    padding: 1em;
+    height: 3em;
+    font-family: Copse, serif;
+    text-align: center;
+    font-size: large;
+    background-color: rgb(70, 112, 190);
+  }
+
+  tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+  }

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title%} Game Page {% endblock %}
+{% block content %}
+<h2 id="score"></h2>
+<h2 id="timer"></h2>
+<form action="/game/check" method="POST">
+    <table id  = "gameboard">
+      <thead>
+        <tbody>
+   {% for list in gameboard %}         
+    <tr> 
+     {% for letter in list%}
+     <td>
+        {{letter}}
+     </td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+    </tbody>
+    </thead>    
+    </table>
+    <button>Submit a Guess</button>
+</form>
+{% endblock %}
